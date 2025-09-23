@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>Dashboard</h2>
+<div class="card">
+  <h3>Live Status</h3>
+  <pre id="status">loading...</pre>
+  <button onclick="fetchStatus()">Refresh</button>
+</div>
+
+<script>
+async function fetchStatus(){
+  const r = await fetch('/status');
+  const j = await r.json();
+  document.getElementById('status').textContent = JSON.stringify(j, null, 2);
+}
+fetchStatus();
+</script>
+{% endblock %}

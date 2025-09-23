@@ -1,0 +1,144 @@
+2025-09-11 15:50:36,163 - INFO - [START] Starting Enhanced Restaurant Scraper v2.0 - Fixed Unicode
+2025-09-11 15:50:36,164 - INFO - [FEATURES] Real-time Updates | Smart Extraction | Auto Resume | Quality Scoring
+2025-09-11 15:50:36,183 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.21.181:5000
+2025-09-11 15:50:36,183 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-11 15:50:46,328 - INFO - 10.10.21.181 - - [11/Sep/2025 15:50:46] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:50:48,581 - INFO - 10.10.21.181 - - [11/Sep/2025 15:50:48] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:50:50,141 - INFO - 10.10.21.181 - - [11/Sep/2025 15:50:50] "GET / HTTP/1.1" 200 -
+2025-09-11 15:50:50,290 - INFO - 10.10.21.181 - - [11/Sep/2025 15:50:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-11 15:50:50,294 - INFO - 10.10.21.181 - - [11/Sep/2025 15:50:50] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-09-11 15:51:00,881 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:00] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:51:10,889 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:10] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:51:12,554 - INFO - [START] Starting enhanced scraping with config: {'general_search_term': 'restaurant', 'categories': ['restaurant'], 'zipcodes': ['76107 in Fort Worth'], 'max_scrolls': 1, 'scroll_pause': 3, 'max_workers': 5, 'scrape_timeout': 15, 'headless_mode': False}
+2025-09-11 15:51:12,557 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:12] "POST /start-scraping HTTP/1.1" 200 -
+2025-09-11 15:51:12,614 - INFO - [LOAD] Checkpoint loaded: 12 links
+2025-09-11 15:51:14,586 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:14] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:14,616 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/Paris+7th+Restaurant+Fran%C3%A7ais/data=!4m7!3m6!1s0x864e73e9b9a34b99:0x38a998fb29b2f52d!8m2!3d32.7516593!4d-97.3660278!16s%2Fg%2F11gg_0q15s!19sChIJmUujuelzToYRLfWyKfuYqTg?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:14,617 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:14,619 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/HG+Sply+Co.+-+Fort+Worth/data=!4m7!3m6!1s0x864e722d2a89264b:0x12fb2f785fb197c8!8m2!3d32.7273918!4d-97.3594283!16s%2Fg%2F11cp5hgd8d!19sChIJSyaJKi1yToYRyJexX3gv-xI?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:14,620 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/The+Social+House/data=!4m7!3m6!1s0x864e73e75de351d7:0x3d15168c0eca10fc!8m2!3d32.7503734!4d-97.358536!16s%2Fg%2F11b6xzd5w6!19sChIJ11HjXedzToYR_BDKDowWFT0?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:14,621 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:14,624 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/Vickery+Cafe/data=!4m7!3m6!1s0x864e724b535cc355:0x8a0da98ce5209d7!8m2!3d32.750726!4d-97.352071!16s%2Fg%2F1tg_xhj5!19sChIJVcNcU0tyToYR1wlSzpjaoAg?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:14,624 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:14,626 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/Montgomery+Street+Cafe/data=!4m7!3m6!1s0x864e73c64dd5eca5:0x4ecdb5ac07e2dc7c!8m2!3d32.7404561!4d-97.3701854!16s%2Fg%2F1tfq51h9!19sChIJpezVTcZzToYRfNziB6y1zU4?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:14,626 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:14,629 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:16,584 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:16] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:18,697 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:18] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:19,928 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:19,935 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:19,942 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:19,968 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:20,006 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:20,569 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:20] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:20,774 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:20,784 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:20,791 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:20,791 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:20,808 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:20,880 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:20] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:51:21,562 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:21,592 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:21,599 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:21,622 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:21,632 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:22,735 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:22] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:24,592 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:24] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:26,779 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:26] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:28,578 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:28] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:30,622 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:30] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:30,897 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:30] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:51:32,167 - INFO - 127.0.0.1 - - [11/Sep/2025 15:51:32] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:51:32,578 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:32] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:33,171 - INFO - [EMAIL] Website scraping for HG Sply Co. - Fort Worth: 7 emails found
+2025-09-11 15:51:33,175 - INFO - [EMAIL] Website scraping for Vickery Cafe: 0 emails found
+2025-09-11 15:51:33,216 - INFO - [EMAIL] Website scraping for Montgomery Street Cafe: 2 emails found
+2025-09-11 15:51:33,254 - INFO - [SUCCESS] Scraped: HG Sply Co. - Fort Worth | Quality: 100% | Emails: 7
+2025-09-11 15:51:33,264 - INFO - [SUCCESS] Scraped: Vickery Cafe | Quality: 70% | Emails: 0
+2025-09-11 15:51:33,285 - INFO - [SUCCESS] Scraped: Montgomery Street Cafe | Quality: 100% | Emails: 2
+2025-09-11 15:51:34,289 - INFO - [EMAIL] Website scraping for The Social House: 1 emails found
+2025-09-11 15:51:34,339 - INFO - [SUCCESS] Scraped: The Social House | Quality: 100% | Emails: 1
+2025-09-11 15:51:34,684 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:34] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:34,686 - INFO - [EMAIL] Website scraping for Paris 7th Restaurant Français: 5 emails found
+2025-09-11 15:51:34,735 - INFO - [SUCCESS] Scraped: Paris 7th Restaurant Français | Quality: 100% | Emails: 5
+2025-09-11 15:51:36,585 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:36] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:38,574 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:38] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:39,664 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/Piola+Italian+Restaurant+%26+Garden/data=!4m7!3m6!1s0x864e73ea9ed049dd:0xe3e458df416c4228!8m2!3d32.7498283!4d-97.3717481!16s%2Fg%2F1tdzgdhy!19sChIJ3UnQnupzToYRKEJsQd9Y5OM?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:39,664 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/Quince+Riverside/data=!4m7!3m6!1s0x864e73a8e6930eb9:0x2dd2064cd3ad4a23!8m2!3d32.7270724!4d-97.3596791!16s%2Fg%2F11sk8nrfsr!19sChIJuQ6T5qhzToYRI0qt00wG0i0?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:39,664 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/Lucile%E2%80%99s/data=!4m7!3m6!1s0x864e73a66673c2c1:0xb6481b7a491bd505!8m2!3d32.7393791!4d-97.3906315!16s%2Fg%2F1vhkkz16!19sChIJwcJzZqZzToYRBdUbSXobSLY?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:39,665 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:39,666 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:39,666 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:40,587 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:40] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:40,812 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/Aventino%27s+Italian+Restaurant/data=!4m7!3m6!1s0x864e731f4884e041:0xb1e1e1a34ccc2c1a!8m2!3d32.7315282!4d-97.4111616!16s%2Fg%2F1tdcb6dr!19sChIJQeCESB9zToYRGizMTKPh4bE?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:40,814 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:40,889 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:40] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:51:40,970 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/Taste+Community+Restaurant/data=!4m7!3m6!1s0x864e710a4741a12b:0x11320cee6221400a!8m2!3d32.7316241!4d-97.3260727!16s%2Fg%2F11fzfdvg4_!19sChIJK6FBRwpxToYRCkAhYu4MMhE?authuser=0&hl=en&rclk=1
+2025-09-11 15:51:40,971 - INFO - ====== WebDriver manager ======
+2025-09-11 15:51:42,583 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:42] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:44,582 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:44] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:44,867 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:44,913 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:44,926 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:45,666 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:45,667 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:45,682 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:45,779 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:45,817 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:46,374 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:46,402 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:46,414 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:46,514 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:46,539 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:51:46,570 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:46] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:47,098 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:47,180 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:51:48,603 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:48] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:50,634 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:50] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:50,937 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:50] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:51:52,575 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:52] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:55,449 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:55] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:56,622 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:56] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:51:56,992 - INFO - [EMAIL] Website scraping for Quince Riverside: 0 emails found
+2025-09-11 15:51:57,046 - INFO - [SUCCESS] Scraped: Quince Riverside | Quality: 80% | Emails: 0
+2025-09-11 15:51:57,635 - INFO - [EMAIL] Website scraping for Lucile’s: 0 emails found
+2025-09-11 15:51:57,682 - INFO - [SUCCESS] Scraped: Lucile’s | Quality: 80% | Emails: 0
+2025-09-11 15:51:58,043 - INFO - [EMAIL] Website scraping for Piola Italian Restaurant & Garden: 1 emails found
+2025-09-11 15:51:58,092 - INFO - [SUCCESS] Scraped: Piola Italian Restaurant & Garden | Quality: 100% | Emails: 1
+2025-09-11 15:51:58,580 - INFO - 10.10.21.181 - - [11/Sep/2025 15:51:58] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:00,306 - INFO - [EMAIL] Website scraping for Aventino's Italian Restaurant: 1 emails found
+2025-09-11 15:52:00,381 - INFO - [SUCCESS] Scraped: Aventino's Italian Restaurant | Quality: 100% | Emails: 1
+2025-09-11 15:52:00,590 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:00] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:00,888 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:00] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:52:02,577 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:02] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:03,128 - INFO - [EMAIL] Website scraping for Taste Community Restaurant: 0 emails found
+2025-09-11 15:52:03,190 - INFO - [SUCCESS] Scraped: Taste Community Restaurant | Quality: 70% | Emails: 0
+2025-09-11 15:52:03,320 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/rise+souffl%C3%A9+-+Fort+Worth/data=!4m7!3m6!1s0x864e72f6c9d52963:0x7cb0f6ba98fe1c23!8m2!3d32.710478!4d-97.398721!16s%2Fg%2F11f18pv489!19sChIJYynVyfZyToYRIxz-mLr2sHw?authuser=0&hl=en&rclk=1
+2025-09-11 15:52:03,321 - INFO - ====== WebDriver manager ======
+2025-09-11 15:52:03,880 - INFO - [SCRAPE] Scraping entry: https://www.google.com/maps/place/Tokyo+Cafe/data=!4m7!3m6!1s0x864e730636aa720b:0x501efc736220eb48!8m2!3d32.7356267!4d-97.3979957!16s%2Fg%2F1tcz8qnw!19sChIJC3KqNgZzToYRSOsgYnP8HlA?authuser=0&hl=en&rclk=1
+2025-09-11 15:52:03,880 - INFO - ====== WebDriver manager ======
+2025-09-11 15:52:04,589 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:04] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:06,580 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:06] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:06,800 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:52:07,225 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:52:07,263 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:52:07,809 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:52:07,853 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:52:08,301 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:52:08,588 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:08] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:10,580 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:10] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:10,884 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:10] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:52:12,585 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:12] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:14,774 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:14] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:15,774 - INFO - [EMAIL] Website scraping for Tokyo Cafe: 1 emails found
+2025-09-11 15:52:15,826 - INFO - [SUCCESS] Scraped: Tokyo Cafe | Quality: 100% | Emails: 2
+2025-09-11 15:52:16,582 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:16] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:17,848 - INFO - [EMAIL] Website scraping for rise soufflé - Fort Worth: 0 emails found
+2025-09-11 15:52:17,908 - INFO - [SUCCESS] Scraped: rise soufflé - Fort Worth | Quality: 80% | Emails: 0
+2025-09-11 15:52:18,580 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:18] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:20,576 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:20] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:52:20,886 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:20] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:52:22,584 - INFO - 10.10.21.181 - - [11/Sep/2025 15:52:22] "GET /status HTTP/1.1" 200 -

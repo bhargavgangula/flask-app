@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>Google Maps Scraper</h2>
+
+<div class="card">
+  <label>Search term:</label><br>
+  <input id="searchTerm" type="text" value="restaurants" style="width:100%"><br><br>
+
+  <label>Categories (comma separated):</label><br>
+  <input id="categories" type="text" value="thai, tamil" style="width:100%"><br><br>
+
+  <label>Zipcodes (comma/newline separated, supports ranges e.g. 10001-10010):</label><br>
+  <textarea id="zipcodes" rows="3" style="width:100%">10001-10003</textarea><br><br>
+
+  <label>Per-ZIP limit (optional):</label><br>
+  <input id="perZipLimit" type="number" min="1" placeholder="e.g. 10"><br><br>
+
+  <label>Index ranges to scrape (per ZIP) e.g. 1-20,30-40 (optional):</label><br>
+  <input id="indexRanges" type="text" placeholder="1-20,30-40" style="width:100%"><br><br>
+
+  <button class="btn btn-primary" onclick="startScrape()">Start Scraping</button>
+  <button class="btn btn-danger" onclick="stopScrape()">Stop</button>
+</div>
+
+<div class="card">
+  <h3>Status</h3>
+  <pre id="statusBox">Ready</pre>
+  <button class="btn" onclick="refreshStatus()">Refresh status</button>
+</div>
+
+<div class="card">
+  <h3>Results</h3>
+  <button class="btn" onclick="downloadCsv()">Download CSV</button>
+</div>
+
+<script>
+async function startScrape(){
+  const body = {
+    general_search_term: document.getElementById('searchTerm').value,
+    categories: document.getElementById('categories').value.split(',').map(s=>s.trim()).filter(Boolean),
+    zipcodes: document.getElementById('zipcodes').value,
+    per_zip_limit: document.getElementById('perZipLimit').value || null,
+    index_ranges: document.getElementById('indexRanges').value || null,
+    max_scrolls: 6,
+    scroll_pause: 2,
+    max_workers: 3,
+    scrape_timeout: 15,
+    headless_mode: true,
+    dedupe_links: false
+  };
+  const resp = await fetch('/start-scraping', {
+    method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body)
+  });
+  const j = await resp.json();
+  alert(j.message || JSON.stringify(j));
+  refreshStatus();
+}
+
+async function stopScrape(){
+  const resp = await fetch('/stop-scraping', {method:'POST'});
+  const j = await resp.json();
+  alert(j.message || JSON.stringify(j));
+  refreshStatus();
+}
+
+async function refreshStatus(){
+  const r = await fetch('/status');
+  const j = await r.json();
+  document.getElementById('statusBox').textContent = JSON.stringify(j, null, 2);
+}
+
+async function downloadCsv(){
+  const r = await fetch('/download-csv');
+  if(r.status==200){
+    const blob = await r.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'scraped_businesses.csv';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  } else {
+    alert('No data or error. Check status.');
+  }
+}
+
+refreshStatus();
+</script>
+{% endblock %}

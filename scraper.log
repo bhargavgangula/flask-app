@@ -1,0 +1,119 @@
+2025-09-11 15:36:42,011 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.21.181:5000
+2025-09-11 15:36:42,012 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-11 15:36:54,567 - INFO - 10.10.21.181 - - [11/Sep/2025 15:36:54] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:36:56,265 - INFO - 10.10.21.181 - - [11/Sep/2025 15:36:56] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:36:57,859 - INFO - 10.10.21.181 - - [11/Sep/2025 15:36:57] "GET / HTTP/1.1" 200 -
+2025-09-11 15:36:57,988 - INFO - 10.10.21.181 - - [11/Sep/2025 15:36:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-11 15:36:57,997 - INFO - 10.10.21.181 - - [11/Sep/2025 15:36:57] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-09-11 15:37:08,573 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:08] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:37:17,318 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:17] "POST /start-scraping HTTP/1.1" 200 -
+2025-09-11 15:37:17,318 - INFO - ====== WebDriver manager ======
+2025-09-11 15:37:18,574 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:18] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:37:19,335 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:19] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:20,801 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:21,244 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:21,330 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:21] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:21,654 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:37:23,341 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:23] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:25,333 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:25] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:27,335 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:27] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:28,573 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:28] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:37:29,332 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:29] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:31,336 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:31] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:32,028 - INFO - 127.0.0.1 - - [11/Sep/2025 15:37:32] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:37:33,331 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:33] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:35,327 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:35] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:37,335 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:37] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:38,545 - INFO - ====== WebDriver manager ======
+2025-09-11 15:37:38,548 - INFO - ====== WebDriver manager ======
+2025-09-11 15:37:38,553 - INFO - ====== WebDriver manager ======
+2025-09-11 15:37:38,558 - INFO - ====== WebDriver manager ======
+2025-09-11 15:37:38,563 - INFO - ====== WebDriver manager ======
+2025-09-11 15:37:38,586 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:38] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:37:39,332 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:39] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:41,338 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:41] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:43,340 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:43] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:43,783 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:43,783 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:43,792 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:43,797 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:43,862 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:44,553 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:44,567 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:44,585 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:44,593 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:44,642 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:37:45,306 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:37:45,312 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:37:45,328 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:37:45,342 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:37:45,344 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:45] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:45,393 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:37:47,530 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:47] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:48,588 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:48] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:37:49,337 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:49] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:51,607 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:51] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:53,655 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:53] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:55,602 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:55] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:57,328 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:57] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:37:58,574 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:58] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:37:59,340 - INFO - 10.10.21.181 - - [11/Sep/2025 15:37:59] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:01,342 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:01] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:02,697 - INFO - ====== WebDriver manager ======
+2025-09-11 15:38:03,333 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:03] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:03,842 - INFO - ====== WebDriver manager ======
+2025-09-11 15:38:04,204 - INFO - ====== WebDriver manager ======
+2025-09-11 15:38:04,718 - INFO - ====== WebDriver manager ======
+2025-09-11 15:38:05,342 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:05] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:05,579 - INFO - ====== WebDriver manager ======
+2025-09-11 15:38:07,325 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:07,339 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:07] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:08,010 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:08,573 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:08,587 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:08] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:38:08,682 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:38:08,914 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:09,228 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:09,284 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:09,337 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:09] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:09,623 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:09,989 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:10,124 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:38:10,163 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:10,413 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:38:10,650 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:10,755 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:38:11,333 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:11] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:11,563 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:38:13,340 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:13] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:15,872 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:15] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:17,330 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:17] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:18,823 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:18] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:38:19,450 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:19] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:21,343 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:21] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:23,335 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:23] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:24,923 - INFO - ====== WebDriver manager ======
+2025-09-11 15:38:25,341 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:25] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:26,187 - INFO - ====== WebDriver manager ======
+2025-09-11 15:38:27,342 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:27] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:27,971 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:28,439 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:28,571 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:28] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:38:28,860 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:38:29,096 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:29,333 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:29] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:29,519 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-11 15:38:30,052 - INFO - Driver [C:\Users\Bhargav\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-11 15:38:31,331 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:31] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:32,038 - INFO - 127.0.0.1 - - [11/Sep/2025 15:38:32] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:38:33,339 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:33] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:35,342 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:35] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:37,559 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:37] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:38,582 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:38] "GET /get-results HTTP/1.1" 200 -
+2025-09-11 15:38:39,339 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:39] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:41,331 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:41] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:43,342 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:43] "GET /status HTTP/1.1" 200 -
+2025-09-11 15:38:45,341 - INFO - 10.10.21.181 - - [11/Sep/2025 15:38:45] "GET /status HTTP/1.1" 200 -

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scraper CRM</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
+    .navbar { background:#20232a; color:#fff; padding:10px 16px; display:flex; align-items:center; }
+    .navbar a { color: #61dafb; text-decoration:none; margin-right:12px; }
+    .container { padding: 16px; }
+    .card { border: 1px solid #ddd; padding: 12px; border-radius:6px; margin-bottom:12px; }
+    .btn { padding:8px 12px; border-radius:4px; border:none; cursor:pointer; }
+    .btn-primary { background:#1976d2; color:white; }
+    .btn-danger { background:#d32f2f; color:white; }
+    pre { background:#f6f6f6; padding:10px; border-radius:6px; overflow:auto; }
+  </style>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <div class="navbar">
+    <a class="navbar-brand" href="{{ url_for('dashboard') }}">CRM</a>
+    <a href="{{ url_for('index') }}">Home</a>
+  </div>
+  <div class="container">
+    {% block body %}{% endblock %}
+  </div>
+</body>
+</html>
