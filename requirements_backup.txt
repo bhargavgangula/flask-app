@@ -1,0 +1,11 @@
+Flask==2.3.3
+beautifulsoup4==4.12.2
+beautifulsoup4>=4.12.2,<5.0.0
+flask>=2.3.0,<3.0.0
+gunicorn>=23.0.0,<24.0.0
+lxml==4.9.3
+lxml>=4.9.3,<5.0.0
+pandas==2.1.1
+pandas>=2.1.0,<3.0.0
+requests==2.31.0
+requests>=2.31.0,<3.0.0
