@@ -1,9 +1,13 @@
+# render.yaml
 services:
   - type: web
-    name: flask-app-13
+    name: flask-app-13       # Unique name for your web service
     env: python
     branch: main
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn Flask_Scraper_Backend:app
     region: oregon
     instanceType: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.10"        # Lock Python to 3.10 to avoid pandas build errors
