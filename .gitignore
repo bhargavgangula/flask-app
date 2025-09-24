@@ -1,0 +1,15 @@
+# Ignore virtual environment
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore CSV/Excel outputs
+*.csv
+*.xlsx
+
+# Ignore checkpoints and logs
+*.pkl
+*.log
