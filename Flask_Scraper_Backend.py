@@ -11,8 +11,10 @@ Features:
 
 import io
 import logging
+import os
 import random
 import re
+import secrets as _secrets
 import threading
 import time
 import urllib.parse
@@ -42,6 +44,7 @@ logging.basicConfig(
 
 # --- Flask App Initialization ---
 app = Flask(__name__)
+app.secret_key = os.environ.get("FLASK_SECRET_KEY", _secrets.token_hex(32))
 
 # --- Application State Management ---
 APP_STATE = {
@@ -837,26 +840,43 @@ def start_scraping():
             return jsonify({"status": "error", "message": "Scraping is already in progress."}), 400
 
     config = request.json or {}
-    # normalize/validate config and fill defaults
+    # normalize/validate config and fill defaults with safe bounds
+    try:
+        max_scrolls = max(1, min(int(config.get('max_scrolls', 8)), 50))
+        scroll_pause = max(1, min(int(config.get('scroll_pause', 2)), 30))
+        max_workers = max(1, min(int(config.get('max_workers', 3)), 10))
+        scrape_timeout = max(5, min(int(config.get('scrape_timeout', 15)), 120))
+        per_zip_limit = None
+        if config.get('per_zip_limit'):
+            per_zip_limit = max(1, min(int(config['per_zip_limit']), 500))
+    except (ValueError, TypeError):
+        return jsonify({"status": "error", "message": "Invalid numeric parameter."}), 400
+
     config_parsed = {
         'general_search_term': config.get('general_search_term', '').strip(),
         'categories': config.get('categories') or [''],
         'zipcodes': parse_zipcodes(config.get('zipcodes', [])),
-        'max_scrolls': int(config.get('max_scrolls', 8)),
-        'scroll_pause': int(config.get('scroll_pause', 2)),
-        'max_workers': int(config.get('max_workers', 3)),
-        'scrape_timeout': int(config.get('scrape_timeout', 15)),
+        'max_scrolls': max_scrolls,
+        'scroll_pause': scroll_pause,
+        'max_workers': max_workers,
+        'scrape_timeout': scrape_timeout,
         'headless_mode': bool(config.get('headless_mode', True)),
-        'per_zip_limit': int(config['per_zip_limit']) if config.get('per_zip_limit') else None,
+        'per_zip_limit': per_zip_limit,
         'index_ranges': config.get('index_ranges'),  # parsed later
         'dedupe_links': bool(config.get('dedupe_links', False)),
     }
 
-    # basic validation
+    # input validation
     if not config_parsed['general_search_term']:
         return jsonify({"status": "error", "message": "general_search_term is required"}), 400
+    if len(config_parsed['general_search_term']) > 200:
+        return jsonify({"status": "error", "message": "general_search_term too long (max 200 chars)"}), 400
     if not config_parsed['zipcodes']:
         return jsonify({"status": "error", "message": "At least one zipcode required"}), 400
+    if len(config_parsed['zipcodes']) > 100:
+        return jsonify({"status": "error", "message": "Too many zipcodes (max 100)"}), 400
+    if len(config_parsed['categories']) > 20:
+        return jsonify({"status": "error", "message": "Too many categories (max 20)"}), 400
 
     thread = threading.Thread(target=scraping_worker, args=(config_parsed,))
     thread.daemon = True
@@ -869,6 +889,7 @@ def status():
     with state_lock:
         state_copy = APP_STATE.copy()
         state_copy.pop("results_df", None)
+        state_copy.pop("collected_links", None)
         return jsonify(state_copy)
 
 
@@ -909,4 +930,4 @@ def download_csv():
 
 # --- Flask Entry Point ---
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False)
