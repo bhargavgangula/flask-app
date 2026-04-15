@@ -1,6 +1,37 @@
-env/
-*.pyc
+# Python
 __pycache__/
-*.csv
-*.xlsx
-scraper.log
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets & credentials — never commit these
+.env
+*.env
+fb_storage_state.json
+*_storage_state.json
+
+# Scraper data & checkpoints
+scraper_data/
+scraper_checkpoint.json
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large binaries that should not be in version control
+*.deb
+*.jar
