@@ -9,7 +9,13 @@ license = {text = "yes"}
 requires-python = ">=3.10,<4.0"
 dependencies = [
     "flask (>=2.3.0,<3.0.0)",
-    "gunicorn (>=23.0.0,<24.0.0)"
+    "gunicorn (>=21.2.0,<24.0.0)",
+    "pandas (>=2.1.0,<3.0.0)",
+    "numpy (>=1.26.0,<2.0.0)",
+    "requests (>=2.31.0,<3.0.0)",
+    "selenium (>=4.35.0,<5.0.0)",
+    "webdriver-manager (>=4.0.0,<5.0.0)",
+    "usaddress (>=0.5.16,<1.0.0)"
 ]
 
 [dependency-groups]
